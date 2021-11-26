@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=334575280890:domainName=se1yn.net:region=us-east-1": {
+    "Id": "/hostedzone/Z10456531NSMF3UXOZQAE",
+    "Name": "se1yn.net."
+  },
+  "hosted-zone:account=334575280890:domainName=se1yn.net:region=ap-northeast-1": {
+    "Id": "/hostedzone/Z10456531NSMF3UXOZQAE",
+    "Name": "se1yn.net."
+  }
+}

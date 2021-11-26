@@ -1,15 +1,15 @@
 using Amazon.CDK;
-using Amazon.CDK.AWS.S3;
 
 namespace Profile
 {
     public class ProfileStack : Stack
     {
-        internal ProfileStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)
+        public ProfileStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)
         {
-            new Bucket(this, "MyFirstBucket", new BucketProps
+            var hello = new ProfileConstruct(this, "MyProfile", new ProfileConstructProps
             {
-                Versioned = true
+                DomainName= (string) this.Node.TryGetContext("domain"),
+                SiteSubDomain= (string) this.Node.TryGetContext("subdomain")
             });
         }
     }
